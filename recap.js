@@ -129,11 +129,13 @@ console.log(addToEnd);
 
 //! Shift - Takes out the first element and returns it
 
-let arr3 = ["orange", "mango", "grapes"];
-let shift = arr3.shift();
+// let arr3 = ["orange", "mango"];
+// let shift = arr3.shift();
 
-console.log(arr3);
-console.log(shift);
+// console.log(arr3);
+// console.log(shift);
+
+let arr12 = ["peach", "peas", "mango"];
 
 //! Unshift - Append an element at the beginning of the array
 let arr4 = ["blueberry", "papaya", "grapes"];
@@ -152,7 +154,7 @@ for (let arrays in arr4) {
 
 //! Splice - It can set, remove or replace elements.
 
-console.log(arr3.splice(0, 2));
+// console.log(arr3.splice(0, 2));
 
 //! Slice - selects arrays by its index number
 
@@ -270,8 +272,21 @@ console.log(concat);
 let tac = arr1.concat(arr2);
 console.log(tac);
 
-let db = arr3.concat(arr4);
-console.log(db);
+let arr11 = [
+  "apple",
+  "mango",
+  "grapes",
+  "banana",
+  "cherries",
+  "strawberry",
+  "pineapple",
+];
+
+let add = tac.concat(arr12);
+console.log(add);
+
+// let db = arr3.concat(arr4);
+// console.log(db);
 
 //! trim - takes out the spacings in the string
 
@@ -303,3 +318,57 @@ let text4 = "superhaven";
 let check = text4.includes("super");
 
 console.log(check);
+
+//! charAt
+
+let txt = "Remastered";
+let char = txt.charAt(7);
+
+console.log(char);
+
+//! charCodeAt
+
+let txt1 = "superhaven";
+let chars = txt1.charCodeAt(5);
+console.log(chars);
+
+//! split - idk
+
+// * Loops
+
+//! for loop
+
+for (let i = 0; i < arr11.length; i++) {
+  // console.log(arr11[i]);
+}
+
+for (let i = 0; i < arr12.length; i++) {
+  console.log(arr12[i]);
+}
+
+//! for of loop - lets you loop over iterable objects
+
+let txts = "";
+for (let x of arr12) {
+  txts += x;
+}
+console.log(txts);
+
+//! for in loop
+
+let num = [10, 15, 16, 20];
+for (let y in num) {
+}
+
+//! for Each - calls the function once for each array
+
+const numb = [45, 4, 9, 16, 25];
+
+let txts1 = "";
+numb.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txts1 += value + "1, ";
+}
+
+console.log(txts1);

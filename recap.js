@@ -350,14 +350,14 @@ for (let i = 0; i < arr12.length; i++) {
 
 let txts = "";
 for (let x of arr12) {
-  txts += x;
+  txts += x + " ";
 }
 console.log(txts);
 
 //! for in loop
 
-let num = [10, 15, 16, 20];
-for (let y in num) {
+let num = [15, 17, 22, 28];
+for (let x in num) {
 }
 
 //! for Each - calls the function once for each array
@@ -372,3 +372,26 @@ function myFunction(value, index, array) {
 }
 
 console.log(txts1);
+
+//! while loop - runs through a block of code as long as the specified condition is true
+
+let i = 6;
+while (i < 12) {
+  // console.log(i);
+  i++;
+}
+
+//! do... while loop
+
+let iy = 0;
+
+do {
+  console.log(iy);
+  iy++;
+} while (iy < 10);
+
+let yi = 10;
+do {
+  console.log(yi);
+  yi++;
+} while (yi < 10);
